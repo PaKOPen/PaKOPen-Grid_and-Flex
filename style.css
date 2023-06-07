@@ -5,11 +5,24 @@
 }
 
 
-h1 {
-    text-transform: capitalize;
+h1, h2 {
+    text-transform:uppercase;
+    margin: 1rem 0;
 }
-article {
-    max-width: 300px;
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.display {
+    /* max-width: ; */
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    ;
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+    gap: 1rem;
 }
 article > article {
     background-color: black;
@@ -17,8 +30,9 @@ article > article {
     padding: 10px;
     border: 1px solid red;
     border-radius: 10px;
+    max-width: 300px;
 }
 img {
     max-width: 100%;
-    padding: 0;
+    padding: -10px;
 }
